@@ -1,0 +1,25 @@
+# Unreal Engine generated / build artifacts
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Packaged builds (ship the demo recording, not the binaries)
+Packaged/
+
+# Steam SDK dev appid — not a secret (480 = Spacewar), but no need to commit
+steam_appid.txt
+
+# Credentials — NEVER commit (Steam app keys, EOS product secrets, UGS keys)
+*.key
+*.pem
+*Secret*
+*Credentials*
