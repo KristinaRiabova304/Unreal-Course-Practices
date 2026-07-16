@@ -1,0 +1,13 @@
+# Week 09 — не комітити спакований бінарник і важкі медіа
+# Скрипти (.bat) і README комітяться, все інше нижче — ні.
+
+# Packaged build (важкий, викладати окремим release/artifact)
+Packaged/
+*.exe
+Binaries/
+Manifest_*.txt
+
+# Відео (заливати посиланням, не в git)
+*.mp4
+*.mov
+*.mkv
