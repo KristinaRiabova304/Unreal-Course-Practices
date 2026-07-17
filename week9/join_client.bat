@@ -1,6 +1,5 @@
 @echo off
 REM ============================================================
-REM  Week 09 - Path B (Listen Server)
 REM  Joins a listen-server host by IP:port (direct connection).
 REM  IMPORTANT: run this from the folder that has Multi.exe
 REM  (Packaged\Windows\). Copy this .bat there first.
