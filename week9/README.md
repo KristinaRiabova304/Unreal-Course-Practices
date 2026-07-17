@@ -2,7 +2,7 @@
 
 
 
-Обрано **Path B — Listen Server**.
+Обрано **Path B - Listen Server**.
 
 **Причина:** мій движок  це **бінарна  збірка з Epic Games Launcher**, а не source-build.
 Для такої збірки **Path A (dedicated server) не збирається**  Visual Studio / UBT видає
