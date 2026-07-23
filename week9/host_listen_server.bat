@@ -1,16 +1,15 @@
 @echo off
 REM ============================================================
-REM  Week 09 - Path B (Listen Server)
 REM  Launches Multi as a LISTEN-SERVER host on UDP port 7777.
 REM  IMPORTANT: run this from the folder that has Multi.exe
 REM  (Packaged\Windows\). Copy this .bat there first.
 REM ============================================================
 REM  Arguments:
-REM    /Game/ThirdPerson/Lvl_ThirdPerson  - map to open
-REM    ?listen                            - become a listen server (renders + hosts)
-REM    ?port=7777                         - UDP port to listen on
-REM    -log                               - console log window
-REM    -nosteam                           - direct IP networking (Path B), skip Steam
+REM    /Game/ThirdPerson/Lvl_ThirdPerson   map to open
+REM    ?listen                             become a listen server (renders + hosts)
+REM    ?port=7777                          UDP port to listen on
+REM    -log                                console log window
+REM    -nosteam                            direct IP networking (Path B), skip Steam
 REM ============================================================
 if not exist "%~dp0Multi.exe" (
   echo.
