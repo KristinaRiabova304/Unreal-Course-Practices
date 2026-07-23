@@ -1,0 +1,20 @@
+EXPECTED LogAntiCheat OUTPUT FORMAT
+===================================
+These lines show the exact format emitted by UE_LOG(LogAntiCheat, Warning, ...) in
+Source/Deathmatch/AntiCheat/AntiCheatLog.cpp. They are illustrative of the format a grader should
+look for in the Output Log — not a transcript of a specific play session. The %s player field is
+filled from the offender's PlayerState ("Name (Id=N)").
+
+Format string:
+  [REJECT] <UTC>Z (t=<serverSeconds>s) | player=<name> (Id=<n>) | action=<Action> | reason=<why>
+
+One rejection per line, prefixed by Unreal with "LogAntiCheat: Warning:".
+
+Examples (one per hardened vector):
+
+LogAntiCheat: Warning: [REJECT] 2026-07-23 19:41:07Z (t=42.13s) | player=Player1 (Id=257) | action=Fire | reason=rate limit exceeded (8.0/s, burst 12)
+LogAntiCheat: Warning: [REJECT] 2026-07-23 19:41:12Z (t=47.02s) | player=Player1 (Id=257) | action=Fire | reason=empty magazine
+LogAntiCheat: Warning: [REJECT] 2026-07-23 19:41:18Z (t=53.44s) | player=Player1 (Id=257) | action=Fire | reason=aim deviation 61.4 deg exceeds max 25.0
+LogAntiCheat: Warning: [REJECT] 2026-07-23 19:41:21Z (t=56.78s) | player=Player1 (Id=257) | action=Fire | reason=aim origin mismatch: 8123cm from server view (max 250)
+LogAntiCheat: Warning: [REJECT] 2026-07-23 19:41:25Z (t=60.11s) | player=Player1 (Id=257) | action=Reload | reason=magazine already full
+LogAntiCheat: Warning: [REJECT] 2026-07-23 19:41:30Z (t=65.29s) | player=Player1 (Id=257) | action=Move | reason=impossible speed: claimed 4200 cm/s > allowed 750 cm/s (dt=0.016, moved 67.2cm)
